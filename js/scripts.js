@@ -29,8 +29,8 @@ $(document).ready(function() {
 
 
 
-      $("button#resetBtn").click()
-          $("ul").empty();
+      // $("button#resetBtn").click()
+
 
 
     });
