@@ -13,17 +13,21 @@
       <h1 class="jumbotron">COUNT!</h1>
       <!-- Form -->
       <form id="numberCount" class="form">
-        <div class="form-group">
-          <input id="numberFinal" class="form-control" placeholder= "Enter a number to count to">
-        </div>
-        <div class="form-group">
-          <input id="numberMultiplier" class="form-control" placeholder= "Enter a multipler to count by">
-          <p class="error">Please enter  valid, positive integers for both values where final number is smaller or equal to multiplier</p>
-        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="form-group">
+              <input id="numberFinal" class="form-control" placeholder= "Enter a number to count to">
+            </div>
+            <div class="form-group">
+
+              <input id="numberMultiplier" class="form-control" placeholder= "Enter a multipler to count by">
+              <p class="error">Please enter  valid, positive integers for both values where final number is smaller or equal to multiplier</p>
+            </div>
+          </div>
+          </div>
+
         <button type="submit" class="btn btn-success">Count!</button>
-
       </form>
-
       <div id="formResults">
         <h2>Here are your numbers!</h2>
         <ul id="resultList">

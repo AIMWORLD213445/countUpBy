@@ -12,9 +12,6 @@ $(document).ready(function() {
          finalResults.push(results);
        }
 
-
-
-
     finalResults.forEach(function(finalResult){
       $('ul').append('<li>' + finalResult + '</li>');
     });
@@ -28,21 +25,6 @@ $(document).ready(function() {
     };
 
 
-
-      // $("button#resetBtn").click()
-
-
-
     });
 
-
-
-    // if ($("button#resetBtn").click() ) {
-    //     $("ul").empty();
-    //     $(".error").hide();
-    //     $("#formResults").hide();
-    // } else {
-    //   $("#formResults").show();
-    //   $(".error").hide();
-    // }
     });

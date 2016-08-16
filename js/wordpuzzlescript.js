@@ -9,24 +9,11 @@ $(document).ready(function() {
         if(vowels.includes(splitArray[i])){
           result.push("-");
         } else{ result.push(splitArray[i]);
-
           }
-    }
+        }
 
     $("#showResult").text(result.join(""));
-
-
-
-    console.log(result);
-
-
-
-
-    // REgular expression cheat
-    // userInput = userInput.replace( /[aeiou]/g, '-');
-    // console.log(userInput);
-
-
+    $("#sentenceInput").val("");
 
   });
 });
