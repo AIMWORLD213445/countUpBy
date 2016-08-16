@@ -12,6 +12,10 @@ $(document).ready(function() {
     var splitArray = userInput.split("");
     console.log(splitArray);
 
+    userInput = userInput.replace( /[aeiou]/g, '-');
+    console.log(userInput);
+
+
 
   });
 });
