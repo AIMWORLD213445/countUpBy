@@ -7,17 +7,25 @@ $(document).ready(function() {
     var multiplier = parseInt($("input#numberMultiplier").val());
     console.log(multiplier);
 
-    for (var results = 0; results <= finalNumber; results += multiplier) {
-      alert(results);
-    }
+    var finalResults = []
+       for (var results = multiplier; results <= finalNumber; results += multiplier){
+         finalResults.push(results);
+       }
 
-    if (isNaN(finalNumber) || isNaN(multiplier) || finalNumber <= 0 || multiplier <= 0 || finalNumber > multiplier) {
+
+
+
+    finalResults.forEach(function(finalResult){
+      $('ul').append('<li>' + finalResult + '</li>');
+    });
+
+    if (isNaN(finalNumber) || isNaN(multiplier) || finalNumber <= 0 || multiplier <= 0 || finalNumber < multiplier) {
        $(".error").show();
        $("#formResults").hide();
     } else {
       $("#formResults").show();
       $(".error").hide();
-    }
+    };
 
   });
 
