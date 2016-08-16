@@ -27,6 +27,10 @@ $(document).ready(function() {
       $(".error").hide();
     };
 
+    $("#resetBtn").click(function() {
+      $("#formResults").hide();
+    });
+
   });
 
 });
