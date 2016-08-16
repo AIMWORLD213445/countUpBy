@@ -27,10 +27,22 @@ $(document).ready(function() {
       $(".error").hide();
     };
 
-    $("#resetBtn").click(function() {
-      $("#formResults").hide();
+
+
+      $("button#resetBtn").click()
+          $("ul").empty();
+
+
     });
 
-  });
 
-});
+
+    // if ($("button#resetBtn").click() ) {
+    //     $("ul").empty();
+    //     $(".error").hide();
+    //     $("#formResults").hide();
+    // } else {
+    //   $("#formResults").show();
+    //   $(".error").hide();
+    // }
+    });

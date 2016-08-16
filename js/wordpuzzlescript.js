@@ -2,18 +2,29 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
 
+    var vowels = ["a", "e", "i", "o", "u"];
+    var result = [];
+    var splitArray = $("#sentenceInput").val().toLowerCase().split("");
+    for(var i = 0; i < splitArray.length; ++i) {
+        if(vowels.includes(splitArray[i])){
+          result.push("-");
+        } else{ result.push(splitArray[i]);
 
-    var userInput = $("#sentenceInput").val();
-    console.log(userInput);
-    // var inputArray = []
-    // inputArray.push(userInput);
-    // console.log(inputArray);
+          }
+    }
 
-    var splitArray = userInput.split("");
-    console.log(splitArray);
+    $("#showResult").text(result.join(""));
 
-    userInput = userInput.replace( /[aeiou]/g, '-');
-    console.log(userInput);
+
+
+    console.log(result);
+
+
+
+
+    // REgular expression cheat
+    // userInput = userInput.replace( /[aeiou]/g, '-');
+    // console.log(userInput);
 
 
 
