@@ -14,15 +14,19 @@
       <!-- Form -->
       <form id="numberCount" class="form">
         <div class="form-group">
-          <input class="form-control" placeholder= "Enter a number to count to">
-          <p class="error">Please enter a valid number</p>
+          <input id="numberFinal" class="form-control" placeholder= "Enter a number to count to">
         </div>
         <div class="form-group">
-          <input class="form-control" placeholder= "Enter a multipler to count by">
-          <p class="error">Please enter a valid number</p>
+          <input id="numberMultiplier" class="form-control" placeholder= "Enter a multipler to count by">
+          <p class="error">Please enter a valid, positive integers for both values where final number is smaller or equal to multiplier</p>
         </div>
         <button type="submit" class="btn btn-success">Count!</button>
       </form>
+      <div id="formResults">
+        <h2>Here's your number!</h2>
+        <ul id="resultList">
+        </ul>
+      </div>
     </div>
   </body>
 </html>
